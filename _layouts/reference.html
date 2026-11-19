@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · OpenSparklink</title>
+  <link rel="stylesheet" href="/assets/reference.css">
+</head>
+<body>
+  <main>
+    <nav aria-label="文档导航"><a href="/">OpenSparklink 文档</a>{% if page.up %} / <a href="{{ page.up }}">星闪协议栈</a>{% endif %}</nav>
+    {{ content }}
+    {% if page.source %}<footer><a href="{{ page.source }}">GitHub 原文</a> · <a href="/sparklink/source-license.txt">源仓库许可证</a></footer>{% endif %}
+  </main>
+</body>
+</html>
